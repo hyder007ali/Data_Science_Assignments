@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<degree_spondylolisthesis numeric &le; 15.155<br/>gini = 0.648<br/>samples = 93<br/>value = [24, 28, 41]<br/>class = normal (NO)>, fillcolor="#8139e533"] ;
+1 [label=<pelvic_radius numeric &le; 125.195<br/>gini = 0.497<br/>samples = 52<br/>value = [24, 28, 0]<br/>class = spondylolisthesis (SL)>, fillcolor="#39e58124"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<sacral_slope numeric &le; 43.715<br/>gini = 0.461<br/>samples = 36<br/>value = [23, 13, 0]<br/>class = disk hernia (DH)>, fillcolor="#e581396f"] ;
+1 -> 2 ;
+3 [label=<pelvic_tilt numeric &le; 9.11<br/>gini = 0.366<br/>samples = 29<br/>value = [22, 7, 0]<br/>class = disk hernia (DH)>, fillcolor="#e58139ae"] ;
+2 -> 3 ;
+4 [label=<gini = 0.0<br/>samples = 2<br/>value = [0, 2, 0]<br/>class = spondylolisthesis (SL)>, fillcolor="#39e581ff"] ;
+3 -> 4 ;
+5 [label=<gini = 0.302<br/>samples = 27<br/>value = [22, 5, 0]<br/>class = disk hernia (DH)>, fillcolor="#e58139c5"] ;
+3 -> 5 ;
+6 [label=<degree_spondylolisthesis numeric &le; 9.725<br/>gini = 0.245<br/>samples = 7<br/>value = [1, 6, 0]<br/>class = spondylolisthesis (SL)>, fillcolor="#39e581d4"] ;
+2 -> 6 ;
+7 [label=<gini = 0.0<br/>samples = 6<br/>value = [0, 6, 0]<br/>class = spondylolisthesis (SL)>, fillcolor="#39e581ff"] ;
+6 -> 7 ;
+8 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0, 0]<br/>class = disk hernia (DH)>, fillcolor="#e58139ff"] ;
+6 -> 8 ;
+9 [label=<pelvic_incidence numeric &le; 33.72<br/>gini = 0.117<br/>samples = 16<br/>value = [1, 15, 0]<br/>class = spondylolisthesis (SL)>, fillcolor="#39e581ee"] ;
+1 -> 9 ;
+10 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0, 0]<br/>class = disk hernia (DH)>, fillcolor="#e58139ff"] ;
+9 -> 10 ;
+11 [label=<gini = 0.0<br/>samples = 15<br/>value = [0, 15, 0]<br/>class = spondylolisthesis (SL)>, fillcolor="#39e581ff"] ;
+9 -> 11 ;
+12 [label=<gini = 0.0<br/>samples = 41<br/>value = [0, 0, 41]<br/>class = normal (NO)>, fillcolor="#8139e5ff"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
